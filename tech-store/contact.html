@@ -26,6 +26,9 @@
                 <li><a href="contact.html">contact us</a></li>
             </ul>
         </nav>
+        <div>
+            <input type="search" placeholder="search...">
+        </div>
     </header>
 
     <!-- Main section -->
@@ -42,15 +45,42 @@
                 <input id="email" name="email" type="text" placeholder="Enter your email" required>
             </div>
             <div>
-                <Label for="number">Number: </Label>
+                <Label for="number">Phone number: </Label>
                 <input id="number" name="number" type="text" placeholder="Enter your Phone number">
             </div>
+
             <div>
                 <Label for="subject">Subject<span style="color:red;font-weight:bold;">*</span>: </Label>
                 <select id="subject" required>
-                    <option>Return</option>
+                    <option selected disabled></option>
+                    <optgroup label="Product issues">
+                        <option value="returns">Return</option>
+                        <option value="faulty_item">Faulty item</option>
+                    </optgroup>
+                    <optgroup label="Delivery">
+                        <option value="delivery">Delivery info</option>
+                        <option value="order_tracking">Tracking my order</option>
+                    </optgroup>
+                    <optgroup label="Misc.">
+                        <option value="advice">Advice</option>
+                        <option value="other">Other</option>
+                    </optgroup>
                 </select>
             </div>
+
+            <!-- <div>
+                <Label for="subject">Subject<span style="color:red;font-weight:bold;">*</span>: </Label>
+                <input type="text" list="subjects" id="subject" placeholder="Enter your subject" required> 
+                <datalist id="subjects">
+                    <option value="returns">
+                    <option value="faulty item">
+                    <option value="delivery">
+                    <option value="order tracking">
+                    <option value="advice">
+                    <option value="other">
+                </datalist>
+            </div> -->
+
             <div>
                 <label for="message">Message<span style="color:red;font-weight:bold;">*</span>: </label><textarea id="message" name="message" cols="30" rows="5" required></textarea>
             </div>
@@ -61,8 +91,8 @@
                 <input type="checkbox" name="subscribe" id="newsletter" value="newsletter">
                 <label for="emailsub">Email</label>
                 <input type="checkbox" name="subscribe" id="emailsub" value="email">
-                <label for="post">Post</label>
-                <input type="checkbox" name="subscribe" id="post" value="post">
+                <label for="SMS">SMS</label>
+                <input type="checkbox" name="subscribe" id="SMS" value="SMS">
                 </p>
             </div>
 
@@ -77,8 +107,18 @@
             <div>
                 <p><span style="color:red;font-weight:bold;">*</span> Required fields</p>
             </div>
+
+            <div>
+                <!-- <input type="submit"> -->
+                <button type="submit">Send</button>
+                <button type="reset">Reset</button>
+            </div>
         </form>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1087.731977497576!2d-0.00037289609090672854!3d-0.00021657917612122692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMMKwMDAnMDAuMCJOIDDCsDAwJzAwLjAiRQ!5e0!3m2!1sfr!2sfr!4v1596746113264!5m2!1sfr!2sfr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+            <P>Your device do not support iframes</P>
+        </IFRame>
     </main>
+    
     <footer>
         <nav>
             <ul>
@@ -87,6 +127,9 @@
                 <li><a href="contact.html">contact us</a></li>
             </ul>
         </nav>
+        <div>
+            <input type="search" placeholder="search...">
+        </div>
     </footer>
 </body>
 
