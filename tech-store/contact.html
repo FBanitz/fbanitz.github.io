@@ -1,1 +1,93 @@
-contact page
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tech Store - Contact</title>
+    <link rel="icon" type="image/jpg" href="images\icons\favicon.png" />
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>Tech Store</h1>
+            <h2>A demo shop by François BANITZ</h2>
+            <h4>based on a tutorial by Chris Dixon</h4>
+        </div>
+        <div>
+            <hr>
+            <h3>Warning! This is not a real shop, do not try buying items</h3>
+            <hr>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="">shop</a></li>
+                <li><a href="contact.html">contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main section -->
+    <main>
+        <h2>Contact Us:</h2>
+
+        <form action="" method="">
+            <div>
+                <label for="name">Name<span style="color:red;font-weight:bold;">*</span>: </label>
+                <input id="name" name="name" type="text" placeholder="Enter your name" required>
+            </div>
+            <div>
+                <Label for="email">Email<span style="color:red;font-weight:bold;">*</span>: </Label>
+                <input id="email" name="email" type="text" placeholder="Enter your email" required>
+            </div>
+            <div>
+                <Label for="number">Number: </Label>
+                <input id="number" name="number" type="text" placeholder="Enter your Phone number">
+            </div>
+            <div>
+                <Label for="subject">Subject<span style="color:red;font-weight:bold;">*</span>: </Label>
+                <select id="subject" required>
+                    <option>Return</option>
+                </select>
+            </div>
+            <div>
+                <label for="message">Message<span style="color:red;font-weight:bold;">*</span>: </label><textarea id="message" name="message" cols="30" rows="5" required></textarea>
+            </div>
+
+            <div>
+                <p>Subscribe to future offers by:</p>
+                <label for="newsletter">Newsletter</label>
+                <input type="checkbox" name="subscribe" id="newsletter" value="newsletter">
+                <label for="emailsub">Email</label>
+                <input type="checkbox" name="subscribe" id="emailsub" value="email">
+                <label for="post">Post</label>
+                <input type="checkbox" name="subscribe" id="post" value="post">
+                </p>
+            </div>
+
+            <div>
+                <p>How would you like us to respond?</p>
+                <label for="phoneresponse">Phone</label>
+                <input type="radio" id="phoneresponse" name="response" value="phone">
+                <label for="emailResponse">Email</label>
+                <input type="radio" id="emailResponse" name="response" value="email">
+            </div>
+
+            <div>
+                <p><span style="color:red;font-weight:bold;">*</span> Required fields</p>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="">shop</a></li>
+                <li><a href="contact.html">contact us</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>
