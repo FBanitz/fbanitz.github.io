@@ -1,13 +1,93 @@
 html {
     background: #f7f7f7;
 }
-body{
+
+body {
     font-family: Arial, Helvetica, sans-serif;
     background: white;
     max-width: 1350px;
     margin: 0 auto;
 }
-/* header, footer {
+
+main {
+    width: 1070px;
+    display: inline-block;
+}
+
+aside {
+    width: 270px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+header, footer {
     background: rgb(51, 51, 51);
     color: white;
+} 
+
+header h1, #subtitle, nav {
+    display: inline-block;
+}
+/* nav {
+    float: right;
+    vertical-align: top;
 } */
+
+/* header nav {
+    position: absolute;
+    right: 0;
+    overflow: auto;
+} */
+
+header p {
+    margin:  10px 5px;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    display: inline;
+}
+
+.product {
+    
+    box-sizing: border-box;
+    margin: 5px;
+    border: 1px solid grey;
+    width: 254px;
+    height: 500px;
+    padding: 5px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.product h4 {
+    max-lines: 1;
+} 
+/* .button {
+    padding: 10px;
+    vertical-align: bottom;
+    display: inline-block;
+} */
+
+#warn {
+    background: firebrick;
+    color: rgb(41, 22, 22);
+    font-weight:bold;
+}
+
+#warn p {
+    margin: 5px;
+}
+
+#warn hr {
+    margin: 0;
+}
+

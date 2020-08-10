@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Tech Store</title>
     <link rel="icon" type="image/jpg" href="images\icons\favicon.png" />
+    <!-- <link rel="stylesheet" href="reset.css"> -->
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -16,26 +18,24 @@
 <body>
     <header>
         <div>
-            <div>
-                <h1>Tech Store</h1>
-                <h2>A demo shop by François BANITZ</h2>
-                <p style="font-weight:bold;">based on a tutorial by Chris Dixon</p>
+            <h1>Tech Store</h1>
+            <div id="subtitle">
+                <p>A demo shop by François BANITZ</p>
+                <p>based on a tutorial by Chris Dixon</p>
             </div>
-            <warn>
-                <hr>
-                <p>Warning! This is not a real shop, do not try buying items</p>
-                <hr>
-            </warn>
+            <nav>
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="">shop</a></li>
+                    <li><a href="contact.html">contact us</a></li>
+                    <input type="search" placeholder="search...">
+                </ul> 
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">home</a></li>
-                <li><a href="">shop</a></li>
-                <li><a href="contact.html">contact us</a></li>
-            </ul>
-        </nav>
-        <div>
-            <input type="search" placeholder="search...">
+        <div id="warn">
+            <hr>
+            <p>Warning! This is not a real shop, do not try buying items</p>
+            <hr>
         </div>
     </header>
 
@@ -69,7 +69,7 @@
     <!-- Main section to display products: -->
     <main>
         <h2>All items:</h2>
-        <div>
+        <div class="product">
             <a href="xbox-one-controller-white.html">
                 <img src="images\products\xbox controller/face.png" alt="Xbox One Controller Wireless White picture"
                     width="300">
@@ -77,11 +77,11 @@
             </a>
             <p><strong>59,99 €</strong></p>
             <p>A controller for <strong>Xbox One</strong> and <strong>PC</strong> (USB dongle or Bluetooth)</p>
-            <a href="xbox-one-controller-white.html">More info</a>
-            <a href="">add to cart</a>
+            <a href="xbox-one-controller-white.html" class="button">More info</a>
+            <a href="" class="button">add to cart</a>
         </div>
 
-        <div>
+        <div class="product">
             <a href="asus-rog-strix.html">
                 <img src="images\products\rog strix\35° front.jpg" alt="Asus ROG Strix G15 picture"
                     width="300">
@@ -89,11 +89,11 @@
             </a>
             <p><strong>1499,99 €</strong></p>
             <p>Gaming Laptop 15.6'' Full HD (1920 x 1080) 144 Hz - Intel Core i7-10750H Hexa Core 2.6 GHz - 16 Go DDR4 - SSD 512 Go - Nvidia GeForce RTX 2060 - 2.39 Kg - Windows 10</p>
-            <a href="asus-rog-strix.html">More info</a>
-            <a href="">add to cart</a>
+            <a href="asus-rog-strix.html" class="button">More info</a>
+            <a href="" class="button">add to cart</a>
         </div>
 
-        <div>
+        <div class="product">
             <a href="corsair-K95.html">
                 <img src="images\products\corsair K95\front 45°.jpg" alt="Corsair Gaming K95 RGB Platinum (MX Speed)(AZERTY) picture"
                     width="300">
@@ -101,11 +101,11 @@
             </a>
             <p><strong>189,99 €</strong></p>
             <p>Mechanical gaming keyboard - Backlight 16.8M de colors key by key - Switches RGB Cherry MX Speed - USB Port 2.0</p>
-            <a href="corsair-K95.html">More info</a>
-            <a href="">add to cart</a>
+            <a href="corsair-K95.html" class="button">More info</a>
+            <a href="" class="button">add to cart</a>
         </div>
 
-        <div>
+        <div class="product">
             <a href="mi-9t-pro.html">
                 <img src="images\products\9t pro\face back 2.jpg" alt="Xiaomi Mi 9T Pro picture"
                     width="300">
@@ -113,8 +113,8 @@
             </a>
             <p><strong>499,99 €</strong></p>
             <p>Smartphone unlocked 4G 6.4 Inches, 6Go RAM, 128Go ROM, Double nano-SIM, Android 9 Blue</p>
-            <a href="mi-9t-pro.html">More info</a>
-            <a href="">add to cart</a>
+            <a href="mi-9t-pro.html" class="button">More info</a>
+            <a href="" class="button">add to cart</a>
         </div>
     </main>
     <footer>
