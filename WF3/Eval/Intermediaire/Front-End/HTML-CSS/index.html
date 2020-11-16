@@ -1,11 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evaluation Intermediaire FrontEnd - HTML/CSS - Exercice 1</title>
+    <title>Evaluation Intermediaire FrontEnd - HTML/CSS - Sport.com</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <header>
+        <div>
+            <div id="logo">
+                <img src="./img/logo.png" alt="Logo Sport.com">
+                <p>Lorem ipsum dolor <span class="orange">sit amet</span></p>
+            </div>
+            <div>
+                <div id="compte">
+                    <div>
+                        <img src="./img/icon-mon-compte.png" alt="Icone mon compte">
+                        <p>Mon compte</p>
+                    </div>
+                    <div>
+                        <img src="./img/icon-mon-panier.png" alt="Icone mon panier">
+                        <p>Votre panier est vide</p>
+                    </div>
+                </div>
+                <div id="julien"><p>Bonjour Julien</p></div>
+                <nav>
+                    <ul class="menu">
+                        <li><a href="#">Contactez-nous</a></li>
+                        <li><a href="#">Parrainage</a></li>
+                        <li><a href="#">Déconnexion</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="large-image"><img src="./img/header-page-catalogue.png" alt="Header page catalogue"></section>
+        <section id="catalogue">
+            <div>
+                <div>
+                    <div>
+                        <div class="discount"><p>-45%</p></div>
+                        <div class="item">
+                            <img src="./img/gant-boxe-2.png" alt="Gant Boxe 2">
+                            <p>NTS de boxe combat Klimax V3</p>
+                        </div>
+                        <div class="vente">
+                            <div class="bouton"><a href="#">Voir la vente</a></div>
+                            <div class="prix"><p><span class="barre">120 &euro;</span><span class="orange">65 &euro;</span></p></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="discount"><p>-30%</p></div>
+                        <div class="item">
+                            <img src="./img/gant-boxe-2.png" alt="Gant Boxe 2">
+                            <p>NTS de boxe combat Klimax V3</p>
+                        </div>
+                        <div class="vente">
+                            <div class="bouton"><a href="#">Voir la vente</a></div>
+                            <div class="prix"><p><span class="barre">120 &euro;</span><span class="orange">65 &euro;</span></p></div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div class="discount"><p>-60%</p></div>
+                        <div class="item">
+                            <img src="./img/gant-boxe-1.png" alt="Gant Boxe 1">
+                            <p>NTS de boxe combat Klimax V3</p>
+                        </div>
+                        <div class="vente">
+                            <div class="bouton"><a href="#">Voir la vente</a></div>
+                            <div class="prix"><p><span class="barre">120 &euro;</span><span class="orange">65 &euro;</span></p></div>
+                        </div>  
+                    </div>
+                    <div>
+                        <div class="discount"><p>-70%</p></div>
+                        <div class="item">
+                            <img src="./img/gant-boxe-1.png" alt="Gant Boxe 1">
+                            <p>NTS de boxe combat Klimax V3</p>
+                        </div>
+                        <div class="vente">
+                            <div class="bouton"><a href="#">Voir la vente</a></div>
+                            <div class="prix"><p><span class="barre">120 &euro;</span><span class="orange">65 &euro;</span></p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Qui sommes-nous</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Assitance</a></li>
+                <li><a href="#">CGV</a></li>
+            </ul>
+        </nav>
+        <div class="services">
+            <div id="services-list">
+                <div class="service-details">
+                    <div class="service-image"><img src="./img/icon-livre.png" alt="Icone Livre"></div>
+                    <div class="service-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro rem et nobis ratione</p>
+                    </div>
+                </div>
+                <div class="service-details">
+                    <div class="service-image"><img class="bulb" src="./img/icon-camion.png" alt="Icone Camion"></div>
+                    <div class="service-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro rem et nobis ratione</p>
+                    </div>
+                </div>
+                <div class="service-details">
+                    <div class="service-image"><img src="./img/icon-cadenat.png" alt="Icone Cadenas"></div>
+                    <div class="service-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro rem et nobis ratione</p>
+                    </div>
+                </div>
+                <div class="service-details">
+                    <div class="service-image"><img src="./img/icon-pouce.png" alt="Icone Pouce"></div>
+                    <div class="service-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro rem et nobis ratione</p>
+                    </div>
+                </div>
+            </div>           
+        </div>
+        <hr>
+        <div class="rzo">
+            <div id="rzo-list">
+                <div class="rzo-image"><img src="./img/icon-facebook.png" alt=""></div>
+                <div class="rzo-image"><img src="./img/icon-twitter.png" alt=""></div>
+                <div class="rzo-image"><img src="./img/icon-linkedin.png" alt=""></div>
+            </div>
+        </div>
+        <div id="mentions-leg"><p>&copy; 2013 sport privilege. Tous droits réservés.</p></div>
+    </footer>
 </body>
 </html>

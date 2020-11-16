@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+:root {
+    --orange: #ea9f05;
+    --gris: #c0c0c0;
+    --noir: #000000;
+    --blanc: #ffffff;
+    --police: #4c4c4c;
+    --police-footer: #f3f3f3;
+    --fond-body: #1c1c1c;
+    --fond-header: #f8f8f8;
+    --fond2-header: #efefef;
+    --fond-content: #f3f3f3;
+    --fond-remise: #393636;
+    --fond-footer: #373737;
+    --border-remise: #484040;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--noir);
+    font-family: 'Roboto', sans-serif;
+    color: var(--police);
+    margin: 0;
+}
+
+.orange {
+    color: var(--orange);
+}
+
+.barre {
+    text-decoration: line-through;
+}
+
+section {
+    width: 1020px;
+    margin: 0 auto;
+    background-color: var(--fond-content);
+}
+
+
+header {
+    background-color: var(--fond-header);
+    /* display: flex; */
+}
+
+header>div {
+    height: 212px;
+    width: 1020px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo{
+    margin: 4rem  0 0 1.5rem;
+}
+
+#logo p{
+    font-size: 22.68px;
+}
+
+#compte {
+    display: flex;
+    background-color: var(--fond2-header);
+    border: 1px solid black;
+}
+
+#compte div {
+    margin: 0.5rem 2rem;
+    display: flex;
+    align-items: center
+}
+
+#julien {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 22.83px;
+}
+
+header .menu{
+    margin-top: 2.5rem;
+}
+
+main {
+    margin-top: 1rem;
+}
+
+.large-image img {
+    width: 100%;
+}
+
+#catalogue>div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.discount{
+    background-color: var(--fond-remise);
+    border: 2px solid var(--border-remise);
+    height: 54px;
+    width: 96px;
+    color: var(--orange);
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.item{
+    text-transform: uppercase;
+    background-color: white;
+    text-align: center;
+}
+
+.item img{
+  object-fit: cover;
+  object-position: 100% 0;
+  height: 325px;
+  width: 368px;
+}
+
+p{
+    padding: 1rem 0;
+
+}
+
+.vente{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.vente .bouton a{
+    background-color: var(--noir);
+    padding: 0.5rem 2rem;
+    color: var(--police-footer);
+    text-decoration: none;
+}
+
+.vente .bouton a:hover{
+    color: var(--orange);
+}
+
+.prix{
+    font-weight: bold;
+}
+
+.prix .orange{
+    font-size: 37.76px;
+}
+
+
+
+#catalogue table {
+    margin: 0 auto;
+}
+
+footer {
+    width: 100%;
+    background-color: var(--fond-footer);
+    color: var(--police-footer);
+}
+
+footer hr {
+    width: 475px;
+}
+
+footer nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 51px;
+    background-color: var(--fond-content);
+    width: 515px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.menu li {
+    display: inline;
+    list-style: none;
+    padding: 0 1rem 0 1rem;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: var(--police);
+    font-size: 12.59px;
+}
+
+.menu li a:hover {
+    color: var(--orange);
+}
+
+.services {
+    margin: 0 auto;
+}
+
+#services-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem 0 2rem;
+    justify-content: center;
+}
+
+.service-details {
+    flex-basis: 152px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 120px;
+    text-align: center;
+    margin: 0.5rem;
+}
+
+.service-text {
+    font-size: 12.68px;
+}
+
+.service-image {
+    margin-bottom: 1rem;
+}
+
+#rzo-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem 0 2rem;
+    justify-content: center;
+}
+
+.rzo-image {
+    margin: 0 2rem 0 2rem;
+}
+
+#mentions-leg p {
+    text-align: center;
+    font-size: 11px;
+    padding-bottom: 1rem;
+}
