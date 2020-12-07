@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonctions</title>
+    <script>
+        function affiche( element, contenu ) {
+            document.getElementById( element ).innerHTML = contenu;
+        }
+    </script>
+</head>
+<body>
+
+    <h1>Fonctions anonymes</h1>
+
+    <p id="p1">Cliquez-moi</p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    <p id="p5"></p>
+
+    <script>
+        
+        // function() {
+        //     alert('Je suis une fonction anonyme');
+        // }
+
+        // Avec utilisation d'une variable
+        let alerte = function() {
+            alert('Je suis une fonction anonyme');
+        }
+        alerte();
+
+        // Auto-invoquée
+        // ( function() { alert('Je suis une fonction anonyme auto-invoquée'); } )();
+
+        // Evénement
+        // let paragraphe = document.getElementById('p1');
+        // paragraphe.addEventListener( 'click', function() { alert('Je suis une fonction anonyme - click détecté'); } );
+            
+        // paragraphe.addEventListener( 'click', alerte );
+        // function alerte() {
+        //     alert('click détecté');
+        // }
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonctions</title>
+    <script>
+        function affiche( element, contenu ) {
+            document.getElementById( element ).innerHTML = contenu;
+        }
+    </script>
+</head>
+<body>
+
+  
+    <h1>Objet String</h1>
+
+    <p id="p1">123</p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    <p id="p5"></p>
+
+    <script>
+
+        // console.log( 'MIN_VALUE : ' + Number.MIN_VALUE);
+        // console.log( 'MAX_VALUE : ' + Number.MAX_VALUE);
+        // console.log( 'MIN_SAFE_INTEGER : ' + Number.MIN_SAFE_INTEGER);
+        // console.log( 'MAX_SAFE_INTEGER : ' + Number.MAX_SAFE_INTEGER);
+        // console.log( 'NEGATIVE_INIFINITY : ' + Number.NEGATIVE_INFINITY);
+        // console.log( 'POSITIVE_INFINITY : ' + Number.POSITIVE_INFINITY);
+
+        // NaN : Not a Number
+
+        // console.log( 'NaN : ' + Number.NaN);
+
+
+    // isFinite()
+        
+        let nb1 = 10;
+        let nb2 = Number.POSITIVE_INFINITY;
+
+        // console.log( Number.isFinite( nb1 ) );
+        // console.log( Number.isFinite( nb2 ) );
+
+    // isInteger()
+
+        // nb1 = 10;
+        // nb2 = 10.5;
+
+        // console.log( Number.isInteger( nb1 ) );
+        // console.log( Number.isInteger( nb2 ) );
+
+
+    // isNaN()
+
+        // nb1 = 10;
+        // nb2 = NaN;
+
+        // console.log( Number.isNaN( nb1 ) );
+        // console.log( Number.isNaN( nb2 ) );
+
+    // isSafeInteger()
+
+        // nb1 = 10;
+        // nb2 = 9007199254740992;
+
+        // console.log( Number.isSafeInteger( nb1 ));
+        // console.log( Number.isSafeInteger( nb2 ));
+
+    // parseFloat()
+
+        // let a = '28';
+        // let b = '28 Pierre';
+        // let c = '2e8';
+        // let d = 'Pierre 50';
+        // let e = '2.8';
+        // let f = '2+3';
+        // let g = '-28';
+
+        // console.log( Number.parseFloat(a) + ' ' + typeof(Number.parseFloat(a)));
+        // console.log( Number.parseFloat(b));
+        // console.log( Number.parseFloat(c));
+        // console.log( Number.parseFloat(d));
+        // console.log( Number.parseFloat(e));
+        // console.log( Number.parseFloat(f));
+        // console.log( Number.parseFloat(g));
+
+    // parseInt()
+
+        // let a = '28';
+        // let b = '28 Pierre';
+        // let c = '2e8';
+        // let d = 'Pierre 50';
+        // let e = '2.8';
+        // let f = '2+3';
+        // let g = '-28';
+
+        // console.log( Number.parseInt(a) + ' ' + typeof(Number.parseInt(a)));
+        // console.log( Number.parseInt(b));
+        // console.log( Number.parseInt(c));
+        // console.log( Number.parseInt(d));
+        // console.log( Number.parseInt(e));
+        // console.log( Number.parseInt(f));
+        // console.log( Number.parseInt(g));
+
+        // let a = "ABC";
+        // let b = "1000";
+        // let c = "FF";
+
+        // console.log( Number.parseInt(a, 16));   // Hexadécimal
+        // console.log( Number.parseInt(b, 16));
+        // console.log( Number.parseInt(b, 2));    // Binaire
+        // console.log( Number.parseInt(b, 8));    // Octal
+        // console.log( Number.parseInt(c, 16));
+
+        // Binaire : 0 1 
+        // Octal : 0 1 2 3 4 5 6 7
+        // Héxadécimal : 0 1 2 3 4 5 6 7 8 9 A B C D E F
+
+        // #FFFFFF : 255 * 255 * 255
+        // 1010 : 1*8 + 0*4 + 1*2 + 0*1
+
+        // 1000 :   1*512   + 0*64  +   0*8   +  0*1
+        // 1000 :   1*4096  + 0*256 +   0*16  +  0*1
+        // ABC :    10*256 +   11*16  +  12*1
+
+
+        // base 2 : binaire
+        // base 8 : octal 
+        // base 10 : décimal
+        // base 16 : hexadécimal
+
+        // (décimal) 123 : 1*100 + 2*10 + 3*1
+        // (hexadecimal) 123 : 1*256 + 2*16 + 3*1 -> 256 + 32 + 3 = 291
+        // (octal) 123 : 1*64 + 2*8 + 3*1 -> 64 + 16 + 1 = 81
+        // (binaire) 
+        // 0*128 + 1*64 + 1*32 + 1*16+ 1*8 + 0*4 + 1*2 + 1*1 01111011 -> 123
+
+    // toFixed()
+
+        // nb1 = 12215.9856421;
+        // nb2 = 71.12;
+
+        // console.log( nb1.toFixed( 0 ) );
+        // console.log( nb1.toFixed( 2 ) );
+        // console.log( nb1.toFixed( 4 ) );
+
+    // toPrecision()
+
+        // console.log( nb1.toPrecision( 1 ) );
+        // console.log( nb1.toPrecision( 2 ) );
+        // console.log( nb1.toPrecision( 4 ) );
+      
+    // toString();
+
+        nb1= 128;
+
+        console.log( nb1.toString() + ' ' + typeof(nb1.toString()));
+        console.log( nb1.toString(16) + ' ' + typeof(nb1.toString(16)));
+        console.log( nb1.toString(2) + ' ' +typeof(nb1.toString(2)));
+
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonctions</title>
+    <script>
+        function affiche( element, contenu ) {
+            document.getElementById( element ).innerHTML = contenu;
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Objets :  -->
+
+    <!-- variable : propriété / attribut -->
+    <!-- function : méthode -->
+    <!-- appeller une fonction : invoquer une méthode -->
+    
+    
+    <h1>POO : Objets litéraux</h1>
+
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    <p id="p5"></p>
+
+    <script>
+
+    
+        // let pierre = {
+        //     nom: "Dupond", 
+        //     prenom: "Pierre",
+        //     ville: "Strasbourg",
+        //     fiche: function() {
+        //         alert('Nom : ' + this.nom + '\nPrénom : ' + this.prenom + '\nVille : ' + this.ville );
+        //     }
+        // }
+
+        // let paul = {
+        //     nom: "Dupond", 
+        //     prenom: "Pierre",
+        //     ville: "Strasbourg",
+        //     fiche: function() {
+        //         alert('Nom : ' + this.nom + '\nPrénom : ' + this.prenom + '\nVille : ' + this.ville );
+        //     }
+        // }
+
+        // let jacques = {
+        //     nom: "Dupond", 
+        //     prenom: "Pierre",
+        //     ville: "Strasbourg",
+        //     fiche: function() {
+        //         alert('Nom : ' + this.nom + '\nPrénom : ' + this.prenom + '\nVille : ' + this.ville );
+        //     }
+        // }
+
+
+        function Personne( personneNom, personnePrenom, personneVille ) {
+            this.nom = personneNom;
+            this.prenom= personnePrenom;
+            this.ville= personneVille;
+            this.fiche = function() {
+                alert('Nom : ' + this.nom + '\nPrénom : ' + this.prenom + '\nVille : ' + this.ville );
+            }
+        }
+
+        let pierre = new Personne( "Dupont", "Pierre", "Strasbourg" );
+        let paul = new Personne( "Durand", "Paul", "Colmar" );
+        let jacques = new Personne( "Martin", "Jacques", "Saverne" );
+       
+    </script>
+
+</body>
+</html>

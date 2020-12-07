@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    <p id="p5"></p>
+
+    <script>
+
+        let a;
+
+        document.getElementById('p1').innerHTML = 'Type de a :' + typeof(a);
+
+        a = 1;
+
+        document.getElementById('p2').innerHTML = 'Type de a :' + typeof(a);
+        
+        let b = null;
+        
+        document.getElementById('p3').innerHTML = 'Type de b :' + typeof(b);
+
+        let c = 0;
+        let d = '';
+
+    </script>
+</body>
+</html>

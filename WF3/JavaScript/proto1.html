@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonctions</title>
+    <script>
+        function affiche( element, contenu ) {
+            document.getElementById( element ).innerHTML = contenu;
+        }
+    </script>
+</head>
+<body>
+
+  
+    <h1>POO : Prototype 1</h1>
+
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    <p id="p5"></p>
+
+    <script>
+
+        let moteur = {
+            puissance: 90,
+            demarrer() {
+                console.log('Vroum !!!');
+            }
+        }
+// 
+        let vehicule = {
+            motorise: true,
+        }
+        
+        vehicule.__proto__ = moteur;
+
+// ------------------------------------ //
+        let voiture = {
+            marque: 'Fiat',
+            pareBrise: 'teinté',
+        }
+        voiture.__proto__ = vehicule;
+// 
+        let moto = {
+            marque: 'Triumph',
+            coupeCircuit: 'Total',
+        }
+        moto.__proto__ = vehicule;
+// 
+        let bicyclette = {
+            marque: "Mercier",
+            calePieds: true,
+        }
+bicyclette.__proto__ = vehicule;
+
+
+
+        console.log(voiture.calePieds);
+        console.log(moto.pareBrise);
+        console.log(moto.coupeCircuit);
+
+        voiture.puissance=120;
+        moto.puissance=94;
+        bicyclette.motorise=false;
+
+        console.log( voiture.marque );
+        console.log( voiture.motorise );
+        console.log( voiture.puissance );
+        console.log( voiture.puissance2 );
+
+        console.log(moto.puissance);
+
+
+        voiture.demarrer();
+
+
+    </script>
+
+<!-- 
+
+    moteur :
+        >   vehicule 
+            > voiture
+            > moto
+            > bicyclette
+
+
+    personnes : 
+            > Employé   > Production
+                        > Administration
+                        > Sécurité 
+            > Client    > Particulier
+                        > Entreprise  
+            > Fournisseur > 
+
+
+
+ -->
+
+
+
+
+</body>
+</html>

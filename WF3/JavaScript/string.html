@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonctions</title>
+    <script>
+        function affiche( element, contenu ) {
+            document.getElementById( element ).innerHTML = contenu;
+        }
+    </script>
+</head>
+<body>
+
+  
+    <h1>Objet String</h1>
+
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    <p id="p5"></p>
+
+    <script>
+
+        let ch1 = 'Bonjour, je m\'appelle Pierre Dupont';
+
+    // includes()
+
+        // if( ch1.includes( 'Pierre' ) ) {
+        //     console.log('Glop');
+        // } else {
+        //     console.log('Pas glop');
+        // }
+
+        // if( ch1.includes( 'pierre' ) ) {
+        //     console.log('Glop');
+        // } else {
+        //     console.log('Pas glop');
+        // }
+
+    // startsWith() , endsWith()
+
+        // ch1 = 'Bonjour, je m\'appelle Pierre Dupont';
+
+        // if( ch1.startsWith('Bon') ) { 
+        //     console.log('Glop');
+        // } else {
+        //     console.log('Pas glop');
+        // }
+
+        // if( ch1.endsWith('pont') ) { 
+        //     console.log('Glop');
+        // } else {
+        //     console.log('Pas glop');
+        // }
+
+    // substring()
+
+        // ch1 = 'Bonjour, je m\'appelle Pierre Dupont';
+        
+        // console.log( ch1.substring( 9 ) );
+        // console.log( ch1.substring( 9, 19 ) );
+        // console.log( ch1.substring( 10, 5 ) );
+        // console.log( ch1.substring( 5, 10 ) );
+
+    // indexOf(), lastIndexOf()
+
+        // ch1 = 'Bonjour, je m\'appelle Pierre Dupont';
+
+        // console.log( ch1.indexOf('e') );
+        // console.log( ch1.indexOf('elle') );
+        // console.log( ch1.indexOf('z') );
+        // console.log( ch1.lastIndexOf('e') );
+        // console.log( ch1.indexOf('on') );
+        // console.log( ch1.lastIndexOf('on') );
+
+    // slice()
+
+        // ch1 = 'Bonjour, je m\'appelle Pierre Dupont';
+
+        // console.log( ch1.slice(9,19));
+        // console.log( ch1.substring(9,19));
+        
+        // console.log( ch1.slice(19,9));
+        // console.log( ch1.substring(19,9));
+
+        // console.log( ch1.substring(-25,-12));
+        // console.log( ch1.slice(-25,-12));
+
+
+    // replace()
+
+        // ch1 = 'Bonjour, je m\'appelle Pierre Dupont';
+
+        // ch1 = ch1.replace('Pierre', 'Jean');
+        // console.log(ch1);
+
+        // let ch2 = ch1.replace('Pierre', 'Jean');
+        // console.log(ch2);
+
+    // toLowerCase(), toUpperCase()
+
+        // ch1 = 'Bonjour, je m\'appelle Pierre Dupont';
+
+        // console.log( ch1.toLowerCase() );
+        // console.log( ch1.toUpperCase() );
+
+    // trim()
+
+        ch1 = 'Bonjour, je m\'appelle Pierre Dupont';
+        ch2 = '      Bonjour, je m\'appelle Pierre Dupont        ';
+
+        let ch3 = new String('chaine');
+
+        console.log( ch1 );
+        console.log( ch1.trim() );
+        console.log( '|' + ch2 + '|' );
+        console.log( '|' + ch2.trim() + '|'  );
+
+    </script>
+
+</body>
+</html>

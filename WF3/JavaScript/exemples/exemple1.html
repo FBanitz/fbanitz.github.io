@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemple 1</title>
+    <link rel="stylesheet" href="../assets/css/js.css">
+</head>
+<body>
+    
+    <script>
+        
+        window.addEventListener('load', horloge);
+
+        function horloge() {
+            let date = new Date();
+            document.getElementById('heure').innerHTML = date.toLocaleTimeString();
+            setTimeout(horloge,1000);
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            let cache = document.getElementById('bouton');
+            cache.addEventListener('click', cacheHorloge);
+            document.getElementById('phrase').style.display = 'block';
+
+            function cacheHorloge() {
+                let phrase = document.getElementById('phrase');
+                if(phrase.style.display == 'block' ) {
+                   phrase.style.display = 'none';
+                }  else {
+                   phrase.style.display = 'block';
+                }
+            }
+        });
+
+    </script>
+
+    <h1>Exemple 1</h1>
+    <p id="phrase">Il est actuellement <span id="heure"></span></p>
+    <button id="bouton">Montrer/Masquer</button>
+
+</body>
+</html>

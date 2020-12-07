@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonctions</title>
+    <script>
+        function affiche( element, contenu ) {
+            document.getElementById( element ).innerHTML = contenu;
+        }
+    </script>
+</head>
+<body>
+
+  
+    <h1>Tableaux</h1>
+
+    <p id="p1">123</p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    <p id="p5"></p>
+
+    <!--  
+
+        Tableau : Array
+        
+Tableaux numériques :        
+        clé/key : valeur/value  
+(clé, indice, index)
+
+         0 : Pierre
+         1 : Jean
+         2 : Jacques 
+
+
+Tableaux associatifs (non disponibles en JS - objet littéral):
+         'prenom'   : 'Pierre'
+         'nom'      : 'Dupont'
+         'ville'    : 'Strasbourg'
+
+
+    -->
+
+    <script>
+
+    let prenoms     = [ 'Pierre', 'Paul', 'Jacques', 'Marie' ];
+    let ages        = [ 27, 35, 41];
+    let mixed       = [ 27, 'Pierre', true, 35, 'Jacques'];
+    let multi       = [ 27, 'Pierre', true, [ 1, 'a', true, [ 1, 2, 3, 4] ], 45 ];
+
+    // Nombre d'éléments dans le tableau
+    // console.log( prenoms.length);
+
+    // console.log( prenoms[2] );
+    // console.log( multi[2] );
+    // console.log( multi[3] );
+    // console.log( multi[3][1] );
+    // console.log( multi[3][3][2] );
+
+    
+    // for(let i=0; i < prenoms.length; i++) {
+    //     console.log(prenoms[i]);
+    // }
+
+    // for(let valeur of prenoms ) {
+    //     console.log(valeur);
+    // }
+
+    // for(let valeur of multi) {
+    //     console.log(valeur);
+    //     // console.log(typeof(valeur));
+    // }
+
+    // let personne = {
+    //     prenom: 'Pierre',
+    //     nom: 'Dupont',
+    //     ville: 'Strasbourg'
+    // }
+
+    // for(let valeur in personne ) {
+    //     console.log(valeur + ' : ' + personne[valeur]);
+    // }
+
+    // Pile : 
+    // LIFO : Last In First Out
+    // push ... pop
+
+    // File :
+    // FIFO : First In First Out
+    // push ... shift 
+
+
+    // push()
+
+    prenoms.push('Jeanne');
+    prenoms.push('Georgette', 'Clémentine', 'Rose');
+    prenoms.unshift('Léa');
+    prenoms.unshift('Eva', 'Claude', 'Raymond');
+
+    for(let valeur of prenoms ) {
+        console.log(valeur);
+    }
+
+    let recup = prenoms.pop();
+    let recup2 = prenoms.shift();
+
+
+    // splice()
+
+    // splice( position_depart, nombre éléments à supprimmer [, élément à ajouter, ...])
+
+    // prenoms.splice( 3, 0, "Adeline", "Johnny", "Robert", "Jeanne");  // Ajouter des éléments après le troisième
+    // prenoms.splice( 3, 2); // Supprimmer deux éléments après le 3eme 
+
+    // prenoms.splice(3, 2, "Adeline", 'Johnny');  // Remplacement des 4eme et 5eme éléments
+
+    // prenoms.splice( 3, 1,"Adeline", "Johnny", "Robert", "Jeanne" );
+    // prenoms.splice( 3, 3,"Adeline" );
+
+    // join()
+
+    // construire une chaîne de caractères en prenant chacun des éléments d'un tableau et en les séparant par 
+    //une virgule (ou une autre séquence de caractères)
+
+    // let tableau = ["Adeline", "Johnny", "Robert", "Jeanne"];
+
+
+    // let resultat = tableau.join();
+    // let resultat = tableau.join('/');
+
+
+    let tab1 =  ["Adeline", "Johnny", "Robert", "Jeanne"];
+    let tab2 =  ['Georgette', 'Adeline', 'Clémentine', 'Rose', "Robert"];
+
+    // for( let valeur of tab2 ) {
+    //     tab1.push( valeur );
+    // }
+
+    // for( let valeur of tab2 ) {
+    //     if( "Robert" == valeur ) {
+    //         continue;
+    //     } else {
+    //         tab1.push( valeur );
+    //     }
+    // }
+
+    // for( let valeur of tab2 ) {
+    //     if( "Robert" != valeur ) {
+    //         tab1.push( valeur );
+    //     }
+    // }
+
+        // includes()
+
+        // for( let valeur of tab2 ) {
+
+        //     if( !tab1.includes( valeur ) ) {
+        //         tab1.push( valeur );
+        //     }
+
+        // }
+
+        //if( expression ) {
+            // code à executer
+            // si évaluation de expression vaut true
+            // tab1.includes( valeur ) -> true si valeur est déjà présent dans tab1
+            // tab1.includes( valeur ) -> false si valeur n'est pas dans tab1
+            // !tab1.includes( valeur ) -> false si valeur est déjà présent dans tab1
+            // !tab1.includes( valeur ) -> true si valeur n'est pas dans tab1
+        //}
+
+
+
+    // concat()
+
+    let tab3 = tab1.concat( tab2 );    
+
+
+
+
+
+    </script>
+
+</body>
+</html>

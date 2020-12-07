@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IF</title>
+</head>
+<body>
+
+    <h1>Structure de contrôle : ternaire</h1>
+
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    <p id="p5"></p>
+
+    <script>
+
+        // expression ?  si vrai : si faux
+
+        // if(expression) {
+        //     si vrai
+        // } else
+        //     si faux
+        // }
+
+        let x = 15;
+        let y;
+
+        // y = x >= 10 ? 'x supérieur ou égal à 10' : 'x inférieur à 10';
+
+        // if( x >=10 ) {
+        //     y = 'x supérieur ou égal à 10';
+        // } else {
+        //     y = 'x inférieur à 10';
+        // }
+
+        // alert(y);
+
+        document.getElementById('p1').innerHTML = ( x >= 10 ) ? 'x supérieur ou égal à 10' : 'x inférieur à 10';
+
+        if( x >=10 ) {
+            document.getElementById('p2').innerHTML = 'x supérieur ou égal à 10';
+        } else {
+            document.getElementById('p2').innerHTML = 'x inférieur à 10';
+        }
+
+    </script>
+</body>
+</html>

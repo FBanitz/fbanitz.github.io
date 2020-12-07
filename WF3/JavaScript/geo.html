@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>window</title>
+    <script>
+        function affiche( element, contenu ) {
+            document.getElementById( element ).innerHTML = contenu;
+        }
+    </script>
+</head>
+<body>
+
+  
+    <h1>window</h1>
+
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    <p id="p5"></p>
+
+    <!--  
+       API : Application Programming Interface
+       BOM : Browser Object Model
+       Interface Window -> objet window (propriétés et méthodes)
+       window >
+            navigator > geolocation
+            history
+            location
+            screen
+            document ( API DOM )
+    -->
+
+    <!-- <button id="b1">Ouverture fenêtre</button>
+    <button id="b2">ResizeBy</button>
+    <button id="b3">ResizeTo</button>
+    <button id="b4">Fermeture fenêtre</button> -->
+
+    <script>
+
+        function coordonnees( maPosition ) {  // fonction callback
+           
+            // let coordonnees = pos.coords; 
+            // let latitude = coordonnees.latitude;
+            // let longitude = coordonnees.longitude;
+            // affiche( 'p1', 'Latitude : ' + latitude );
+            // affiche( 'p2', 'Longitude : ' + longitude );
+
+            affiche( 'p1', 'Latitude : ' + maPosition.coords.latitude );
+            affiche( 'p2', 'Longitude : ' + maPosition.coords.longitude );
+
+        }
+
+        navigator.geolocation.getCurrentPosition( coordonnees );
+
+        // watchPosition( fonction de retour ) : si l'utilisateur change de position
+        // clearWatch( fonction de retour )
+        
+
+
+
+    </script>
+
+</body>
+</html>

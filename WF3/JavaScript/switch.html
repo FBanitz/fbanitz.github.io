@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IF</title>
+</head>
+<body>
+
+    <h1>Structure de contrôle : switch</h1>
+
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    <p id="p5"></p>
+
+    <script>
+
+        let x = 3;
+
+        // if( x==2 ) {
+        //     alert('x vaut 2');
+        // } else if( x==3 ) {
+        //     alert('x vaut 3');
+        // } else if( x==4 ) {
+        //     alert('x vaut 4');
+        // } else if ( x==5 ) {
+        //     alert('x vaut 5');
+        // } else {
+        //     alert('je ne sais pas');
+        // }
+
+        switch(x) {
+            case 2:
+                alert('x vaut 2');
+                break;
+            case 3:
+                alert('x vaut 2 ou 3');
+                break;
+            case 4:
+                alert('x vaut 4');
+                break;
+            case 5:
+                alert('x vaut 5');
+                break;
+            default:
+                alert('je ne sais pas');
+        }
+        
+        alert('Terminé');
+
+
+    </script>
+</body>
+</html>

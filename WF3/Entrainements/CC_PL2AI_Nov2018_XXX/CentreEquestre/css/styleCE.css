@@ -1,0 +1,28 @@
+*{
+    text-align: start;
+}
+
+body {
+    text-align: justify;
+}
+
+.centre {
+    text-align: center;
+}
+
+#horaires, #horaires tr, #horaires td {
+    border: 1px solid black;
+}
+
+.wide {
+    width:100%
+}
+
+nav {
+    background-color: green;
+    height: 50px;
+}
+
+nav *{
+    display: inline;
+}

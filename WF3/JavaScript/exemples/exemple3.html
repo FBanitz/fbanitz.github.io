@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemple 3</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            let bonjour=document.getElementById('bouton1');
+            bonjour.addEventListener('click', alerte);
+        });
+
+        function alerte() {
+            alert('Bonjour !');
+        }
+    </script>
+</head>
+<body>
+
+    <h1>Exemple 3</h1>
+    
+    <button id="bouton1">Cliquez moi !</button>
+    <button id="bouton2">Cliquez moi aussi !</button>
+
+    <script>
+
+        function ajout() {
+            let phrase=document.createElement('p');
+            phrase.textContent = 'Phrase ajoutée';
+            document.body.appendChild(phrase);
+        }
+
+        let ajouter = document.getElementById("bouton2");
+        ajouter.addEventListener('click', ajout);
+
+    </script>
+
+
+</body>
+</html>

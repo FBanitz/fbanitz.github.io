@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonctions</title>
+    <script>
+        function affiche( element, contenu ) {
+            document.getElementById( element ).innerHTML = contenu;
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Objets :  -->
+
+    <!-- variable : propriété / attribut -->
+    <!-- function : méthode -->
+    <!-- appeller une fonction : invoquer une méthode -->
+    
+    
+    <h1>POO : Objets litéraux</h1>
+
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    <p id="p5"></p>
+
+    <script>
+
+        let variable = 1;
+
+        let personne = {
+            nom: "Dupond", 
+            prenom: "Pierre",
+            ville: "Strasbourg",
+            fiche: function() {
+                alert('Nom : ' + this.nom + '\nPrénom : ' + this.prenom + '\nVille : ' + this.ville );
+            }
+        }
+
+        let personne2 = {
+            nom: "Durand", 
+            prenom: "Paul",
+            ville: "Sélestat",
+            fiche: function() {
+                alert('Nom : ' + this.nom + '\nPrénom : ' + this.prenom + '\nVille : ' + this.ville );
+            }
+        }
+
+        personne.pays = "France";
+        personne.fiche2 = function() {
+            alert('Bonjour');
+        }
+
+        personne.ville = "Saverne";
+
+        console.log(personne);
+        console.log(variable);
+
+        // alert(typeof(personne));
+
+        // personne.fiche();
+
+        affiche('p1', personne.nom);
+        affiche('p2', personne.prenom);
+        affiche('p3', personne.ville);
+
+
+
+       
+    </script>
+
+</body>
+</html>

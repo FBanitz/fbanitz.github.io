@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IF</title>
+</head>
+<body>
+
+    <h1>Structure de contrôle : for</h1>
+
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    <p id="p5"></p>
+
+         <!-- boucle while ( "tant que ... faire" ) -->
+         <!-- boucle do ... while ( "faire ... tant que" ) -->
+    
+    <!-- boucle for ( "pour ... ") -->
+
+        <!-- boucle for ... in ( "pour ... dans") -->
+        <!-- boucle for ... of ( "pour ... parmi") -->
+        <!-- boucle for await ... of ( "pour -en attente--... parmi") -->
+
+    <script>
+
+        // for( valeur de départ ; expression ; itérateur) {
+        //     // code à exécuter
+        // }
+
+        // for( let i = 0 ;  i < 10 ; i++ ) {
+        //     document.getElementById('p1').innerHTML += i + ', ' ;
+        // }
+
+        // break
+        // for( let i = 0 ;  i < 10 ; i++ ) {
+        //     document.getElementById('p1').innerHTML += i + ', ' ;
+        //     if( i == 5 ) {
+        //         break;
+        //     }
+        // }
+
+        // continue
+        for( let i = 0 ;  i < 10 ; i++ ) {
+            if( (i % 2) != 0 ) {
+                continue;
+            }
+            document.getElementById('p1').innerHTML += i + ', ' ;
+        }
+
+        // continue
+        // for( let i = 0 ;  i < 10 ; i++ ) {
+        //     if( (i % 2) == 0 ) {
+        //        document.getElementById('p1').innerHTML += i + ', ' ;
+        //     } 
+        // }
+
+        // for( let i = 0 ;  i < 10 ; i+=2 ) {
+        //     document.getElementById('p1').innerHTML += i + ', ' ;
+        // }
+
+    </script>
+</body>
+</html>

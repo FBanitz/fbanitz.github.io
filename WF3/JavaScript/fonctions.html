@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonctions</title>
+    <script>
+        function affiche( element, contenu ) {
+            document.getElementById( element ).innerHTML = contenu;
+        }
+    </script>
+</head>
+<body>
+
+    <h1>Structure de contrôle : for</h1>
+
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    <p id="p5"></p>
+
+    <script>
+        // nom fonction : même règles que pour les noms de variables
+        // commence par une lettre ou _
+        // peut contenir des lettres, des chiffres et _ (pas de caractères spéciaux ni d'espace)
+        // sensible à la casse : mafonction est différent de MaFonction
+        // pas de mot réservé ( if , alert, function, ...)
+        
+        function bonjour( prenom, nom ) {
+            // instructions
+            alert('Bonjour ' + prenom + ' ' + nom );
+        }
+
+
+        // bonjour( 'Pierre', 'Dupont' );
+        // bonjour( 'Paul', 'Durand' );
+        // bonjour( 'Jacques', 'Martin' );
+
+
+        affiche( 'p1', 'Un texte');
+        affiche( 'p2', 'Un autre texte');
+        affiche( 'p3', 'Et un autre texte');
+
+        let phrase = "Je suis Pierre Dupont";
+
+        let phrase2 = phrase.replace( "Pierre", "Paul" );
+
+        affiche( 'p4', phrase );
+        affiche( 'p5', phrase2 );
+
+
+        function texte( mot, repetitions ) {
+            let chaine='';
+            for( let i=0; i<repetitions; i++ ) {
+                chaine += mot + ' ';
+            }
+            return chaine;
+        }
+
+        let retour = texte( 'je suis un terme', 5  );
+
+        affiche( 'p1', retour );
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <!-- Types de variables javascript -->
+    <!-- 
+        string 
+        number
+        boolean
+        null
+        undefined
+        
+        object
+        symbol
+    -->
+
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+
+    <script>
+
+        let prenom  = 'Pierre';
+        let nom     = "Dupont";
+        let age     = 30;
+        let annee   = "1990";
+
+        document.getElementById('p1').innerHTML = 'Type de prenom : ' + typeof(prenom);
+        document.getElementById('p2').innerHTML = 'Type de nom : ' + typeof(nom);
+        document.getElementById('p3').innerHTML = 'Type de age : ' + typeof(age);
+        document.getElementById('p4').innerHTML = 'Type de annee : ' + typeof(annee);
+        
+
+
+
+    </script>
+</body>
+</html>

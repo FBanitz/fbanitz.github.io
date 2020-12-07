@@ -1,0 +1,11 @@
+
+
+Camel case : maPremiereVariable (Javascript, Java, C, C++, …)
+
+Pascal case : MaPremiereVariable (PASCAL, noms de classes en PHP)
+
+Kebab case ou Spinal case : ma-premiere-variable (URL, noms de fichiers, HTML/CSS : noms de classes et d'id)
+
+Underscore case ou Snake case : ma_premiere_variable (PHP, Ruby, Phyton)
+
+Screaming snake case : MA_PREMIERE_VARIABLE ( PHP : noms de constantes)

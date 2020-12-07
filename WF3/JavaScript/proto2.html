@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonctions</title>
+    <script>
+        function affiche( element, contenu ) {
+            document.getElementById( element ).innerHTML = contenu;
+        }
+    </script>
+</head>
+<body>
+
+  
+    <h1>POO : Prototype 1</h1>
+
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    <p id="p5"></p>
+
+    <script>
+
+        let vehicule = {
+            motorise: true,
+            demarrer() {
+                console.log('Vroum !!!');
+            }
+        }
+
+        function Vehicule() { 
+            // let this = {}
+            this.motorise = false;
+            // this.demarrer() = {
+            //     console.log('Vroum !!!');
+            // };
+            this.freiner = function() { console.log('Freinage'); };
+            // return this;
+        }
+        
+        function Voiture(marque) {
+            // let this = {}
+            this.marque = marque;
+            this.couleur = 'Rouge';
+            this.klaxonner = function() { alert('Tuuut !!!'); };
+            // return this;
+        }
+
+        // Voiture.prototype = vehicule;
+        Voiture.prototype = new Vehicule();
+
+        let mycar = new Voiture('Fiat');
+        let mycar2 = new Voiture('Ford');
+
+
+
+    </script>
+
+</body>
+</html>

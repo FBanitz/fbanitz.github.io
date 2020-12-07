@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>window</title>
+    <script>
+        function affiche( element, contenu ) {
+            document.getElementById( element ).innerHTML = contenu;
+        }
+    </script>
+</head>
+<body>
+
+  
+    <h1>window</h1>
+
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    <p id="p5"></p>
+
+    <!--  
+       API : Application Programming Interface
+       BOM : Browser Object Model
+       Interface Window -> objet window (propriétés et méthodes)
+       window >
+            navigator > geolocation
+            history
+            location
+            screen
+            document ( API DOM )
+    -->
+
+    <button id="b1">Ouverture fenêtre</button>
+    <button id="b2">ResizeBy</button>
+    <button id="b3">ResizeTo</button>
+    <button id="b4">Fermeture fenêtre</button>
+
+    <script>
+
+        // affiche('p1', 'Hauteur interne: ' + window.innerHeight);
+        // affiche('p2', 'Largeur interne: ' + window.innerWidth);
+        // affiche('p3', 'Hauteur : ' + window.outerHeight);
+        // affiche('p4', 'Largeur : ' + window.outerWidth);
+
+        let b1 = document.getElementById('b1');
+        let b2 = document.getElementById('b2');
+        let b3 = document.getElementById('b3');
+        let b4 = document.getElementById('b4');
+
+        b1.addEventListener('click', openWindow );
+        b2.addEventListener('click', resizeWindowBy );
+        b3.addEventListener('click', resizeWindowTo );
+        b4.addEventListener('click', closeWindow );
+
+        // moveBy( fenetre.moveBy( 20,20) )
+        // moveTo( fenetre.moveBy( 0,0) )
+        // scrollBy( fenetre.scrollBy( 0,200) )
+        // scrollTo( fenetre.scrollTo( 0,0) )
+
+        function openWindow() { fenetre = window.open( '','', 'width=500,height=500'); }
+        function resizeWindowBy() { fenetre.resizeBy( 50,50 ); }
+        function resizeWindowTo() { fenetre.resizeTo( 600, 800); }
+        function closeWindow() { fenetre.close(); }
+
+        // alert('Bonjour');
+        // prompt('Valeur ?');
+
+        if( confirm('Voulez-vous ouvrir une fenêtre Google ?') ) {
+            fenetre = window.open('https://google.com');
+        }
+
+
+    </script>
+
+</body>
+</html>

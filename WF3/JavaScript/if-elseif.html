@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IF</title>
+</head>
+<body>
+
+    <h1>Structure de contrôle : if ... else if</h1>
+
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    <p id="p5"></p>
+
+    <script>
+
+        let x = 4.5;
+
+        // x>4
+        // x<0
+        // x est compris entre 1 et 5
+        
+        // si x > 4   et    x compris entre 1 et 5 : afiichage des 2 messages
+        
+        
+
+        if( x > 4 && x >=1 && x <= 5) {
+            alert('x est supérieur à 4');
+            alert('x est compris entre 1 et 5');
+        } else if( x < 0 ) {
+            alert('x est inférieur à 0');
+        } else if( x > 4 ) {
+            alert('x est supérieur à 4');
+        } else if( x >=1 && x <= 5 ) {
+            alert('x est compris entre 1 et 5');
+        } else {
+            alert('Je ne peux pas me prononcer');
+        }
+
+
+        // if( x > 4 ) {
+        //     if( x <= 5 ) {
+        //         alert('x est compris entre 1 et 5');
+        //     }
+        //     alert('x est supérieur à 4');
+        // } else if( x < 0 ) {
+        //     alert('x est inférieur à 0');
+        // } else if( x >=1 && x <= 5) {
+        //     alert('x est compris entre 1 et 4');
+        // } else {
+        //     alert('Je ne peux pas me prononcer');
+        // }
+
+        alert('Terminé');
+
+        // if( x > 4 ) {
+        //     alert('x est supérieur à 4');
+        // } else {
+        //     if( x < 0 ) {
+        //         alert('x est inférieur à 0');
+        //     } else {
+        //         if( x >=1 && x <= 2 ) {
+        //             alert('x est compris entre 1 et 2');
+        //         } else {
+        //             alert('Je ne peux pas me prononcer');
+        //         }
+        //     }
+        // }
+
+
+
+    </script>
+</body>
+</html>
