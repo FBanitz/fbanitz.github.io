@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Évaluation pratique finale - HTML/CSS/JS - Location voiture</title>
-    <link rel="stylesheet" href="/assets/css/normalize.css">
-    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/assets/css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="/assets/css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <script src="/assets/js/jquery-3.5.1.min.js"></script>
-    <script src="/assets/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/jquery-3.5.1.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -63,13 +63,13 @@
         <div id="carousel-bg" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block" src="/assets/img/background.jpg" alt="First slide">
+                    <img class="d-block" src="./assets/img/background.jpg" alt="First slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block" src="/assets/img/background.jpg" alt="Second slide">
+                    <img class="d-block" src="./assets/img/background.jpg" alt="Second slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block" src="/assets/img/background.jpg" alt="Third slide">
+                    <img class="d-block" src="./assets/img/background.jpg" alt="Third slide">
                 </div>
             </div>
         </div>
@@ -80,30 +80,41 @@
         <div id="recherche" class="row justify-content-between">
             <button type="button" class="btn btn-light dropdown-toggle">
                 Adresse de départ
-            </button>   
+            </button>
             <div class="input-group col-3">
-                <input type="text" class="form-control" placeholder="Début de location" aria-label="Début de location" aria-describedby="basic-addon2">
+                <input type="text" class="form-control" placeholder="Début de location" aria-label="Début de location"
+                    aria-describedby="basic-addon2">
                 <div class="input-group-append">
-                  <span class="input-group-text" id="basic-addon2">
-                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar3" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
-                        <path fill-rule="evenodd" d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
-                    </svg>
-                  </span>
+                    <span class="input-group-text" id="basic-addon2">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar3" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z" />
+                            <path fill-rule="evenodd"
+                                d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                        </svg>
+                    </span>
                 </div>
             </div>
             <div class="input-group col-3">
-                <input type="text" class="form-control" placeholder="Fin de location" aria-label="Fin de location" aria-describedby="basic-addon2">
+                <input type="text" class="form-control" placeholder="Fin de location" aria-label="Fin de location"
+                    aria-describedby="basic-addon2">
                 <div class="input-group-append">
-                  <span class="input-group-text" id="basic-addon2">
-                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar3" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
-                        <path fill-rule="evenodd" d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
-                    </svg>
-                  </span>
+                    <span class="input-group-text" id="basic-addon2">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar3" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z" />
+                            <path fill-rule="evenodd"
+                                d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                        </svg>
+                    </span>
                 </div>
             </div>
-            <a href="#"></a><div id="valider"><p class="text-white">Valider ma recherche</p></div></a>
+            <a href="#"></a>
+            <div id="valider">
+                <p class="text-white">Valider ma recherche</p>
+            </div></a>
         </div>
 
         <div class="row justify-content-between">
@@ -116,13 +127,13 @@
             <div id="carousel1" class="carousel slide col-4" data-interval="false" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="d-block w-100" src="/assets/img/Peugot-208/avant.png" alt="First slide">
+                        <img class="d-block w-100" src="./assets/img/Peugot-208/avant.png" alt="First slide">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="/assets/img/Peugot-208/cote.jpg" alt="Second slide">
+                        <img class="d-block w-100" src="./assets/img/Peugot-208/cote.jpg" alt="Second slide">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="/assets/img/Peugot-208/arriere.jpg" alt="Third slide">
+                        <img class="d-block w-100" src="./assets/img/Peugot-208/arriere.jpg" alt="Third slide">
                     </div>
                 </div>
                 <a class="carousel-control-prev bg-black" href="#carousel1" role="button" data-slide="prev">
@@ -146,13 +157,13 @@
             <div id="carousel2" class="carousel slide col-4" data-interval="false" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="d-block w-100" src="/assets/img/Ford-Focus/3-4.png" alt="First slide">
+                        <img class="d-block w-100" src="./assets/img/Ford-Focus/3-4.png" alt="First slide">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="/assets/img/Ford-Focus/cote.webp" alt="Third slide">
+                        <img class="d-block w-100" src="./assets/img/Ford-Focus/cote.webp" alt="Third slide">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="/assets/img/Ford-Focus/avant.jpg" alt="Second slide">
+                        <img class="d-block w-100" src="./assets/img/Ford-Focus/avant.jpg" alt="Second slide">
                     </div>
                 </div>
                 <a class="carousel-control-prev bg-black" href="#carousel2" role="button" data-slide="prev">
@@ -176,13 +187,13 @@
             <div id="carousel3" class="carousel slide col-4" data-interval="false" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="d-block w-100" src="/assets/img/Audi-A1/avant.png" alt="First slide">
+                        <img class="d-block w-100" src="./assets/img/Audi-A1/avant.png" alt="First slide">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="/assets/img/Audi-A1/cote.jpg" alt="Second slide">
+                        <img class="d-block w-100" src="./assets/img/Audi-A1/cote.jpg" alt="Second slide">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="/assets/img/Audi-A1/arriere.jpg" alt="Third slide">
+                        <img class="d-block w-100" src="./assets/img/Audi-A1/arriere.jpg" alt="Third slide">
                     </div>
                 </div>
                 <a class="carousel-control-prev bg-black" href="#carousel3" role="button" data-slide="prev">
@@ -202,14 +213,14 @@
             </div>
         </div>
         <hr>
-            <div class="voiture row">
+        <div class="voiture row">
             <div id="carousel4" class="carousel slide col-4" data-interval="false" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="d-block w-100" src="/assets/img/Opel-Mokka/avant.png" alt="First slide">
+                        <img class="d-block w-100" src="./assets/img/Opel-Mokka/avant.png" alt="First slide">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="/assets/img/Opel-Mokka/cote.jpg" alt="Second slide">
+                        <img class="d-block w-100" src="./assets/img/Opel-Mokka/cote.jpg" alt="Second slide">
                     </div>
                 </div>
                 <a class="carousel-control-prev bg-black" href="#carousel4" role="button" data-slide="prev">
@@ -230,13 +241,13 @@
         </div>
         <hr>
         <div class="row justify-content-center">
-            <div class="col-2"><img src="/assets/img/agence.jpg" alt="Agence" id="agence"></div>
+            <div class="col-2"><img src="./assets/img/agence.jpg" alt="Agence" id="agence"></div>
             <div class="col-5">
-            <p>Notre Agence de <strong>Paris</strong><br>
-            300 boulevard de vaugirard, 75015, Paris <br>
-            Ouvert 7j/7 de 09h à 13h et de 14h à 20h <br>
-            01 49 78 21 33 <br>
-            contact@vtc.com</p>
+                <p>Notre Agence de <strong>Paris</strong><br>
+                    300 boulevard de vaugirard, 75015, Paris <br>
+                    Ouvert 7j/7 de 09h à 13h et de 14h à 20h <br>
+                    01 49 78 21 33 <br>
+                    contact@vtc.com</p>
             </div>
 
         </div>
