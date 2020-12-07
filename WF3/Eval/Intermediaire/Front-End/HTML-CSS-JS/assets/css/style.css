@@ -1,0 +1,49 @@
+html,body {
+	position:relative;
+}
+
+#background-carousel{
+	position:fixed;
+	z-index:-1;
+}
+
+.item {
+	background-position:center center;
+	background-size:cover;
+	z-index:0;
+}
+
+#carousel-bg img{
+    max-width: 1920px;
+}
+ 
+#content-wrapper {
+	position:absolute;
+	z-index:1 !important;
+	min-width:100%;
+	min-height:100%;
+}
+
+#recherche{
+    background-color: rgba(255, 255, 255, 0.75);
+    position: relative;
+    top: -6rem;
+}
+
+#recherche>*{
+    margin: 0.5rem;
+}
+
+#agence{
+    width: 100%;
+}
+
+#valider{
+    background-color: rgba(0, 128, 0, 0.5);
+    margin: 0;
+    padding: 0.85rem 5rem 0rem 5rem; 
+}
+
+.voiture{
+    padding: 4rem 0;
+}
